@@ -1,2 +1,2 @@
 # gitleaks-action
-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
+
