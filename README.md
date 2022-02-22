@@ -1,2 +1,3 @@
 # gitleaks-action
 
+hello
