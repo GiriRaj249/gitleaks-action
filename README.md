@@ -1,3 +1,3 @@
 # gitleaks-action
 
-hello
+hello world
