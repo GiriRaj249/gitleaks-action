@@ -13,6 +13,7 @@ echo running gitleaks "$(gitleaks --version) with the following command👇"
 DONATE_MSG="👋 maintaining gitleaks takes a lot of work so consider sponsoring me or donating a little something\n\e[36mhttps://github.com/sponsors/zricethezav\n\e[36mhttps://www.paypal.me/zricethezav\n"
 $CONFIG="./action/.gitleaks.toml"
 echo $PWD
+ls .
 if [ "$GITHUB_EVENT_NAME" = "push" ]
 then
   echo gitleaks --pretty --repo-path=$GITHUB_WORKSPACE --verbose --redact --commit=$GITHUB_SHA $CONFIG
