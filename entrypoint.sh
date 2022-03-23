@@ -11,7 +11,7 @@ fi
 echo running gitleaks "$(gitleaks --version) with the following command👇"
 
 DONATE_MSG="👋 maintaining gitleaks takes a lot of work so consider sponsoring me or donating a little something\n\e[36mhttps://github.com/sponsors/zricethezav\n\e[36mhttps://www.paypal.me/zricethezav\n"
-$CONFIG="action/.gitleaks.toml"
+$CONFIG="$GITHUB_WORKSPACE/action/.gitleaks.toml"
 echo $PWD
 ls -hal action/
 if [ "$GITHUB_EVENT_NAME" = "push" ]
