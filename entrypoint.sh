@@ -2,7 +2,7 @@
 #!/bin/bash
 
 #modified
-CONFIG="--config ./gitleaksaction/rules.toml"
+CONFIG="--config ./action/rules.toml"
 
 echo running gitleaks "$(gitleaks --version) with the following command :
 "
