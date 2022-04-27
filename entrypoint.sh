@@ -15,8 +15,8 @@ CONFIG="--config $GITHUB_WORKSPACE/action/.gitleaks.toml"
 
 if [ "$GITHUB_EVENT_NAME" = "push" ]
 then
-  echo gitleaks --pretty --repo-path=$GITHUB_WORKSPACE --verbose --redact --commit=$GITHUB_SHA $CONFIG
-  CAPTURE_OUTPUT=$(gitleaks --pretty --repo-path=$GITHUB_WORKSPACE --verbose --redact --commit=$GITHUB_SHA $CONFIG)
+  echo gitleaks --pretty --repo-path=$GITHUB_WORKSPACE --verbose --redact  $CONFIG
+  CAPTURE_OUTPUT=$(gitleaks --pretty --repo-path=$GITHUB_WORKSPACE --verbose --redact  $CONFIG)
   
 elif [ "$GITHUB_EVENT_NAME" = "pull_request" ]
 then 
