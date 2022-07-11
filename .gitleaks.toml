@@ -145,6 +145,11 @@ description = "Adobe Client Secret"
 regex = '''(p8e-)(?i)[a-z0-9]{32}'''
 
 [[rules]]
+	description = "Encompass"
+	regex = '''[\d | \w | \$ | \* | \^ | \! | \@ | \# | \& | \()]{64}'''
+	tags = ["key", "encompass"]
+
+[[rules]]
 id = "alibaba-access-key-id"
 description = "Alibaba AccessKey ID"
 regex = '''(LTAI)(?i)[a-z0-9]{20}'''
