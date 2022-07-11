@@ -4,7 +4,7 @@ description = "GitLab Personal Access Token"
 regex = '''glpat-[0-9a-zA-Z\-\_]{20}'''
 
 [[rules]]
-id = "aws-access-token"
+id = "aws-jing-token"
 description = "AWS"
 regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
 
